@@ -423,7 +423,7 @@ def Plot(y, times, poly_ord, cZ, eta, a, b, kernel_type = "polynomial", sigma=0.
                 plt.plot(times_, ub, '--', color = "black")
                 plt.plot(times_, lb, '--', color = "black")
         else:
-            plt.subplot(3,np.ceil(Q/3),(q+1))
+            plt.subplot(3,int(np.ceil(Q/3)),(q+1))
             plt.title('Cluster '+ str(q))
             plt.xlabel("Time")
             plt.ylabel("Trajectory")
